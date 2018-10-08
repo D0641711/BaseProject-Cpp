@@ -19,7 +19,7 @@
 1071 逢甲軟體工程課程使用的專題基礎專案。請使用 [Code::Blocks](http://www.codeblocks.org/) 開發
 
 # 特色
-* 使用 Code::Blocks 開發，適合初學者
+* 使用 Code::Blocks 開發，適合初學者11111111111111111111111111111111111111111111111
 * 僅使用內建的 assert 測試，適合初學者入門，缺點是寫測試較麻煩 (其實本來想用 [Google Test](https://github.com/google/googletest))
 * 使用 [cbp2make](https://sourceforge.net/projects/cbp2make/) 將 Code::Blocks 專案轉換成 Makefile，讓專案能夠在 [Travis CI](https://travis-ci.org/) 編譯與測試，並在 [Codecov](https://codecov.io) 顯示覆蓋率報告
 * 使用 gcov 作為覆蓋率報告工具 (這個由 Codecov 自動處理)
