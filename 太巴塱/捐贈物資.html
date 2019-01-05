@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>物資捐贈</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        #Radius_head{
+            border-radius:120px;
+        }
+        body{ 
+            background: url(picture/background.jpg) no-repeat center fixed; 
+            background-size: cover;
+        }
+        .plan-group {
+            background-color: rgb(226, 226, 226);
+            border: 1px solid black;
+            padding: 100px 80px;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 15px;
+        }
+        .plancontent-group{
+            background-color: rgba(250, 226, 226, 0.884);
+            border: 1px solid rgb(0, 24, 41);
+            padding: 40px 100px;
+            text-align: center;
+            font-size:25px;
+        }
+        #navul{
+            list-style: none;
+            margin: 0 2px;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .inplancontent-group{
+            background-color: rgb(252, 216, 186);
+            border: 1px solid rgb(0, 24, 41);
+            padding: 8px 100px;
+            text-align: center;
+            font-size:25px;
+        }    
+        .btn-group .button {
+            background-color: #FFFF66;
+            /* yellow */
+            border: 1px solid rgb(255, 217, 0);
+            color: black;
+            padding: 15px 148px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .btn-group .button:not(:last-child) {
+            border-right: none;
+            /* Prevent double borders */
+        }
+
+        .btn-group .button:hover {
+            background-color: #ffdb4d;
+            /* orange*/
+                }
+        .button_donate {
+                background-color: rgb(255, 243, 71);
+                color: rgba(248, 1, 1, 0.986);
+                padding: 15px 30px;
+                border-radius: 15px;
+                font-size: 25px;
+                }
+        .step-group{
+                    width: 100%;
+                    display:  block;
+                    text-align:  center;
+                   background-color:  #ffffff;
+                   list-style: none;
+                   border-radius:20px;
+
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff0b3;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(li .active) {
+            background-color: #fff0b3;
+            font-size: 21px;
+        }
+
+        li .active {
+            font-size: 26px;
+        }
+        .navword{
+            font-weight: bold;
+            color: black;
+            font-size: 21px;
+            font-family:Microsoft JhengHei,PMingLiU;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="head" class="carousel slide" data-ride="carousel" data-interval="10000"> 
+                    <ol class="carousel-indicators">
+                        <li data-target="#head" data-slide-to="0" class="active"></li>
+                        <li data-target="#head" data-slide-to="1"></li>
+                        <li data-target="#head" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="picture/head1.jpg" alt="First slide" id="Radius_head">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="picture/head2.jpg" alt="Second slide" id="Radius_head">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="picture/head3.jpg" alt="Third slide" id="Radius_head">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#head" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#head" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul id="navul">
+                    <li><a class="navword" href="文化介紹.html" target="_self">文化介紹</a></li>
+                    <li><a class="navword" href="交通資訊.html" target="_self">交通資訊</a></li>
+                    <li><a class="active navword" href="捐贈物資.html" target="_self">捐贈物資</a></li>
+                    <li><a class="navword"href="旅遊資訊.html" target="_self">旅遊資訊</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="step-group" id="step1">
+                    <img src="picture/step1.jpg" alt="step1";>
+                </div>
+                <div class="step-group" id="step2" style="display:none">
+                    <img src="picture/step2.jpg" alt="step2";>
+                </div>
+                <div class="step-group" id="step3" style="display:none">
+                    <img src="picture/step3.jpg" alt="step3";>
+                </div>
+                <div class="step-group" id="step4" style="display:none">
+                    <img src="picture/step4.jpg" alt="step4";>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4 text-center" id="planABC">
+                <form class="plan-group">
+                    <div id="plan">
+                        <br>選擇方案<br>
+                        <input id="btnA" type="radio" name="plan" value="1" checked> 方案A<br>
+                        <input id="btnB" type="radio" name="plan" value="2"> 方案B<br>
+                        <input id="btnC" type="radio" name="plan" value="3"> 方案C<br>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-8 text-center" id="inplan">
+                <div class="plancontent-group">
+                    <div id="planA" class="inplancontent-group">
+                        <p>方案A-穩定就學方案 <br>資助偏鄉學童能夠安心上學 <br>$800元/月</p>
+                    </div>
+                    <br>
+                    <div id="planB" class="inplancontent-group" style="display:none">
+                        <p>方案B-三餐溫飽方案 <br>維持三餐讓孩童能免受飢餓<br>$600元/月</p>
+                    </div>
+                    <br>
+                    <div id="planC" class="inplancontent-group" style="display:none">
+                        <p>方案C-希望紅包方案 <br>讓孩童也能在節慶享受歡樂氣氛<br>$300元/月</p>
+                    </div>
+                    <br>
+                    <div class="container">
+                        <button type="button" class="button_donate" id="button_donate"  onclick="myFunction()">我要捐款!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--step2 content"填寫基本資料表單"-->
+            <div class="col-md-12 text-center" id="basicdata" style="display:none">
+                <div class="plancontent-group" id="basicgroup">
+                    <div>
+                        <p align="center"> *****請填寫基本資料*****</p>
+                        <form>
+                            <div class="row" align="center">
+                                <div class="col-md-6">
+                                    <label for="donor_name">您的名字 :</label>
+                                    <input type="text" name="donor_name" id="donor_name">
+                                </div>
+                                <div class="col-md-6" align="center">
+                                        <label for="donor_phone">手機號碼 :</label>
+                                        <input type="text" name="donor_phone" id="donor_phone">
+                                    </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6" align="center">
+                                    <label for="donor_email">聯絡信箱 :</label>
+                                    <input type="text" name="donor_email" id="donor_email">
+                                </div>
+                                <div class="col-md-6" align="center">
+                                    <label for="donor_add">通訊地址 :</label>
+                                    <input type="text" name="donor_add" id="donor_add">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" align="center">
+                                    <p style="color:red;">以上資料須填寫完才送出</p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12" align="center">
+                                    <!-- <input type="submit" value="送出" id="sent" onclick="myFunction2()"> -->
+                                    <button type="submit" class="button_donate" id="button_sent"  onclick="myFunction2()">送出</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+          
+            </div>
+        
+
+        <!--step3 content"確認基本資料"-->
+        <div class="col-md-12 text-center" id="checkdata" style="display:none">
+            <div class="plancontent-group">
+                <div>
+                    <p align="center">
+                        *****確認基本資料*****
+                        姓名:
+                        電話:
+                        信箱:
+                        住址:
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+   
+        <!--step4 content"感謝捐贈者頁面"
+        <div class="col-md-12 text-center">
+                <div class="plancontent-group">
+                    <div>
+                        <p align="center">
+                            感謝您的參與
+                            因為有您的捐贈，使我們的愛能夠散播出去
+                            也使我們太巴塱的族人們能夠溫暖的生活。
+                         </p>
+                    </div>
+                </div>
+            </div>
+        -->
+
+    </div>
+    </div>
+</body>
+
+<script>
+    $('.carousel').carousel({
+        interval: 2500
+    })
+    $('.carousel1').carousel({
+        interval: 100
+    })
+</script>
+<script>
+    $(document).ready(function () {
+        $(".button_donate").click(function () {
+            $("#step1").hide();
+            if($("#step2").css("display")=="none"){
+                $("#step2").show();
+            }else{
+                $("#step1").hide();
+            }
+            $("#planABC").hide();
+            $("#inplan").hide();
+            $("#basicdata").show();
+        });
+        $("#btnA").click(function (){
+            $("#planB").hide();
+            $("#planC").hide();
+            if($("#planA").css("display")=="none"){
+                $("#planA").show();
+            }else{
+                $("#planB").hide();
+                $("#planC").hide();
+            }
+        });
+        $("#btnB").click(function (){
+            $("#planA").hide();
+            $("#planC").hide();
+            if($("#planB").css("display")=="none"){
+                $("#planB").show();
+            }else{
+                $("#planA").hide();
+                $("#planC").hide();
+            }
+        });
+        $("#btnC").click(function (){
+            $("#planB").hide();
+            $("#planA").hide();
+            if($("#planC").css("display")=="none"){
+                $("#planC").show();
+            }else{
+                $("#planB").hide();
+                $("#planA").hide();
+            }            
+        });
+    });
+
+    $(document).ready(function(){
+        $(".button_sent").click(function (){
+            $("#step2").hide();
+            if($("#step3").css("display")=="none"){
+                $("#step3").show();
+            }else{
+                $("#step2").hide();
+            }
+            $("#basicdata").hide();
+            $("#checkdata").show();
+        });
+    });
+
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("button_donate");
+         if (x.style.display === "none") {
+           x.style.display = "block";
+         } else {
+           x.style.display = "none";
+        }
+    }
+    function myFunction2() {
+        var y = document.getElementById("button_sent");
+         if (y.style.display === "none") {
+           y.style.display = "block";
+         } else {
+           y.style.display = "none";
+        }
+    }
+</script>
+
+
+
+</body>
+
+</html>

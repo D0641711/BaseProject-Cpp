@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文化介紹</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        #Radius_head{
+            border-radius:120px;
+        }
+        #Radius_picture{
+            border-radius:30px;
+        }
+        body{ 
+            background: url(picture/background.jpg) no-repeat center fixed; 
+            background-size: cover;
+        }
+        #container {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius:15px;
+            height: 100%;
+        }
+        #loginbackground {
+            background-color: #fff5cc;
+            border-radius:15px;
+            height: 100%;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff0b3;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(li .active) {
+            background-color: #fff0b3;
+            font-size: 21px;
+        }
+
+        li .active {
+            font-size: 26px;
+        }
+        .navword{
+            font-weight: bold;
+            color: black;
+            font-size: 21px;
+            font-family:Microsoft JhengHei,PMingLiU;
+        }
+        .texttype{
+            font-size: 18px;
+            color: black;
+            font-family:Microsoft JhengHei,PMingLiU;
+            text-align: justify;
+        }
+        div button:hover {
+            opacity: 0.8;
+        }
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .loginbutton{
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 180px;
+        }
+        #navul{
+            list-style: none;
+            margin: 0 2px;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .logintext{
+            font-family:Microsoft JhengHei,PMingLiU;
+            font-size: 20px;
+        }
+        .btntext{
+            font-family:Microsoft JhengHei,PMingLiU;
+            font-size: 25px;
+            background-color:#FF9999
+        }
+        .btn:active{
+            background-color:yellow;
+        }
+        .btn.active{
+            color: #333;
+            background-color:#ffff80;
+        }
+    </style>
+</head>
+<!-- ******************************************************************************************************************* -->
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="head" class="carousel slide" data-ride="carousel" data-interval="10000"> 
+                    <ol class="carousel-indicators">
+                        <li data-target="#head" data-slide-to="0" class="active"></li>
+                        <li data-target="#head" data-slide-to="1"></li>
+                        <li data-target="#head" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="picture/head1.jpg" alt="First slide" id="Radius_head">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="picture/head2.jpg" alt="Second slide" id="Radius_head">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="picture/head3.jpg" alt="Third slide" id="Radius_head">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#head" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#head" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+<!-- ******************************************************************************************************************* -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul id="navul">
+                    <li><a class="active navword" href="文化介紹.html" target="_self">文化介紹</a></li>
+                    <li><a class="navword" href="交通資訊.html" target="_self">交通資訊</a></li>
+                    <li><a class="navword" href="捐贈物資.html" target="_self">捐贈物資</a></li>
+                    <li><a class="navword"href="旅遊資訊.html" target="_self">旅遊資訊</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+<!-- ******************************************************************************************************************* -->
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <div id="picture" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#picture" data-slide-to="0" class="active"></li>
+                        <li data-target="#picture" data-slide-to="1"></li>
+                        <li data-target="#picture" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="picture/introduction.jpg" alt="First slide" id="Radius_picture">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="picture/legend.jpg" alt="Second slide" id="Radius_picture">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="picture/date.jpg" alt="Third slide" id="Radius_picture">
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="btn-group">
+                    <button type="button" class="btn item1 btntext" id="introduction" onclick="introduction()">部落介紹</button>
+                    <button type="button" class="btn item2 btntext" id="origin" onclick="origin()">起源傳說</button>
+                    <button type="button" class="btn item3 btntext" id="date" onclick="date()">祭典日期</button>
+                </div>
+            </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+            <div class="col-md-3" id="container">
+                <div class="text1">
+                    <p class="texttype">
+                        太巴塱為台灣阿美族的一個部落，位於花蓮縣光復鄉東境。「Afalong」出自於阿美語，
+                        漢譯為阿巴塱，其意譯則指當地有許多白螃蟹，族人因此直接以「白螃蟹」取名；後來被改稱「Tafalong」，即漢譯為「太巴塱」。
+                        日本政府在1937年實行地方改名政策，太巴塱因土地富饒，因此便改稱「富田姊妹」，並沿用至國民政府遷臺之後；
+                        此時全臺的行政區域進行全面的調整，富田被劃分成東富、西富、南富、北富等四村。雖是如此，在現今仍有人使用「太巴塱」或「富田」稱之。
+                        在阿美族的遠古傳說之中，祖先來自現今豐濱鄉貓公山一帶，一路來到太巴塱才定居下來。太巴塱發祥地原本被族人認為是在河床地，
+                        後來在2000年一場考古挖掘之下，在部落後方的小山坡被挖出2000餘年前陶片，屬於卑南文化遺址之巨石文化一部分，因此被當地族人視為這裡是太巴塱發祥地。
+                    </p>
+                </div>
+                <div class="text2" style="display:none">
+                    <p class="texttype">
+                        根據太巴塱阿美族人的傳說，他們的祖先在遠古時住在Arapanay（今台東市南方），
+                        某日遇大洪水，蘆舍多毀，有姊弟Lalakan、Doci兩人一同駕著小木臼，在波濤淘湧的海浪中，從Arapanay漂流至奇密社東北方的Cilangasan，
+                        因為沒有其他人漂來，姊弟二人為了繁衍後代，因而結為夫妻。婚後生男生女，到了第三代，有位名叫Rarikayan-No-Cidal者下山，住在奇密另立一社。
+                        他們的子女們出外狩獵，偶然發現北方的一片原野，乃從Cilangasan下山向北移動，終於在太巴塱社，他們稱它為Siaksakay。
+                        光復鄉前任鄉長萬仁光及地方民意代表曾經到Sisaksakay去，發現不少遺物是祖先留下來的，因此認為，昔時太巴塱社阿美族遷來之初曾以此為拓殖據點。
+                        今他們的後裔皆稱該地是祖先早期之發祥地。在Piharaw時代，族人又從Sisaksakay遷居光復溪右岸與沙荖溪匯合處另建一聚落，稱Cifangaian。
+                        住了一段時間，因遇颱風，溪水暴漲，耕地流失，乃向較高的地方移居，另建一社，名太巴塱，這就是太巴塱歷史的開始。
+                    </p>
+                </div>
+                <div class="text3" style="display:none">
+                    <p class="texttype">
+                        紅糯米採收祭 7月初<br>
+                        豐年祭 8月
+                    </p>
+                </div>
+            </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+            <div class="col-md-3" id="loginbackground">
+                    <h2 style="font-family:Microsoft JhengHei,PMingLiU">用戶登入</h2>
+                    <div style="padding: 16px" action="/process_post" method="POST">
+                        <label for="uname"><b class="logintext">用戶名稱</b></label>
+                        <input type="text" placeholder="請輸入用戶名稱" name="uname" required>
+                    
+                        <label for="psw"><b class="logintext">密碼</b></label>
+                        <input type="text" placeholder="請輸入密碼" name="psw" required>
+                        <button class="loginbutton logintext" type="submit" value="Submit">登入</button>
+                        <button class="loginbutton logintext" type="button">註冊</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- ******************************************************************************************************************* -->
+    <script>
+        $(document).ready(function(){
+            $(".item1").click(function(){
+                $("#picture").carousel(0);
+                $(".btn-group > .btn").removeClass("active");
+                $(this).addClass("active");
+                $(".text1").show();
+                $(".text2").hide();
+                $(".text3").hide();
+            });
+            $(".item2").click(function(){
+                $("#picture").carousel(1);
+                $(".text1").hide();
+                $(".text3").hide();
+                $(".btn-group > .btn").removeClass("active");
+                $(this).addClass("active");
+                if($(".text2").css("display")=="none"){
+                    $(".text2").show();
+                }else{
+                    $(".text1").hide();
+                    $(".text3").hide();
+                }
+            });
+            $(".item3").click(function(){
+                $("#picture").carousel(2);
+                $(".text1").hide();
+                $(".text2").hide();
+                $(".btn-group > .btn").removeClass("active");
+                $(this).addClass("active");
+                if($(".text3").css("display")=="none"){
+                    $(".text3").show();
+                }else{
+                    $(".text1").hide();
+                    $(".text2").hide();
+                }
+            });
+        })
+    </script>
+
+</body>
+</html>
